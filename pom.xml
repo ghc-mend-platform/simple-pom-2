@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.whitesource</groupId>
+    <artifactId>katerina-sample</artifactId>
+    <version>1.0-SNAPSHOT</version>
+<dependencies>
+	<dependency>
+		<groupId>org.apache.camel</groupId>
+		<artifactId>camel-zookeeper</artifactId>
+		<version>3.18.1</version>
+	</dependency>
+<!-- https://mvnrepository.com/artifact/io.netty/netty-codec -->
+    <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-codec</artifactId>
+        <version>4.1.68.Final</version>
+    </dependency>
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>5.3.6</version>
+		<scope>compiled</scope>
+	</dependency>
+
+</dependencies>
+</project>
+
+
