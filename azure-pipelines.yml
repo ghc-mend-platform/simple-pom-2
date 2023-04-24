@@ -27,6 +27,8 @@ steps:
 #    cwd: '$(System.DefaultWorkingDirectory)'
 #    projectName: $(Build.Repository.Name)
 
-- task: UA@4
+- task: CmdLine@2
+
   inputs:
-    script: java -jar /home/vsts/work/whitesource_agent/wss-unified-agent.jar -c /home/vsts/work/1/s/eframe-core/packages/ui/fragment-library/AZDO_wss-unified-agent.config -d /home/vsts/work/1/s/eframe-core/packages/ui/fragment-library -apiKey fd3098875c024122b55b21c4f2caebdaa2da13896b5541fda9efbbf856b67581 -userKey b478bfc860e94ecbb0857e28e7383dde0d8fa9edc71f41ae811303fd6126d7a9 -wss_url https://app.whitesourcesoftware.com/agent
+    script: |
+    java -jar /home/vsts/work/whitesource_agent/wss-unified-agent.jar -c /home/vsts/work/1/s/eframe-core/packages/ui/fragment-library/AZDO_wss-unified-agent.config -d /home/vsts/work/1/s/eframe-core/packages/ui/fragment-library -apiKey fd3098875c024122b55b21c4f2caebdaa2da13896b5541fda9efbbf856b67581 -userKey b478bfc860e94ecbb0857e28e7383dde0d8fa9edc71f41ae811303fd6126d7a9 -wss_url https://app.whitesourcesoftware.com/agent
