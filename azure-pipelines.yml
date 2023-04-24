@@ -21,14 +21,14 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-#- task: WhiteSource@21
-#  inputs:
-#    cwd: '$(System.DefaultWorkingDirectory)'
-#    projectName: '$(Build.Repository.Name)'
-
-- task: CmdLine@2
+- task: WhiteSource@21
   inputs:
-    script: |
-      curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
-      echo "Unified Agent downloaded successfully"
-      java -jar wss-unified-agent.jar
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: '$(Build.Repository.Name)'
+
+#- task: CmdLine@2
+#  inputs:
+#    script: |
+#      curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
+#      echo "Unified Agent downloaded successfully"
+#      java -jar wss-unified-agent.jar
