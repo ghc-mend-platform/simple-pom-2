@@ -31,3 +31,9 @@ steps:
 #      curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
 #      echo "Unified Agent downloaded successfully"
 #      java -jar wss-unified-agent.jar
+
+
+- task: WhiteSource@21
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+    configuration: 'WS_LOG_LEVEL: true'
