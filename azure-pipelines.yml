@@ -36,4 +36,4 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    configuration: 'WS_LOG_LEVEL: true'
+    #configuration: 'WS_LOG_LEVEL: true'
