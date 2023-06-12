@@ -33,7 +33,7 @@ steps:
 #      java -jar wss-unified-agent.jar
 
 
-- task: WhiteSource@21
-  inputs:
-    cwd: '$(System.DefaultWorkingDirectory)'
+#- task: WhiteSource@21
+#  inputs:
+#    cwd: '$(System.DefaultWorkingDirectory)'
     #configuration: 'WS_LOG_LEVEL: true'
